@@ -288,3 +288,21 @@ document.addEventListener(
 
   }
 );
+
+// DELEX announcement expiry: 48 hours
+  const delexExpiry = new Date("2026-10-03T07:25:00Z").getTime();
+
+  function showDelexPopup() {
+    const now = Date.now();
+
+    if (now < delexExpiry) {
+      document.getElementById("delexPopup").style.display = "flex";
+    }
+  }
+
+  function closeDelexPopup() {
+    document.getElementById("delexPopup").style.display = "none";
+  }
+
+  // Show popup when page loads
+  window.addEventListener("load", showDelexPopup);
