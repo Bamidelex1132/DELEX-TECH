@@ -3,7 +3,6 @@ const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 const cursorGlow = document.querySelector(".cursor-glow");
 
-/* Navbar scroll effect */
 window.addEventListener("scroll", () => {
   navbar.classList.toggle(
     "scrolled",
